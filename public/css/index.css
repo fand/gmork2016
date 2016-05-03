@@ -1,2 +1,13 @@
 * {
-  color: blue; }
+  color: #345; }
+
+.App__Content {
+  margin-left: 300px; }
+
+.Sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background: gray; }

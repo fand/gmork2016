@@ -8,6 +8,10 @@ import routes                   from '../src/js/routes';
 
 const app = express();
 app.use(morgan('combined'));
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jsx');
+app.engine('jsx', require('express-react-views').createEngine());
+app.use('/public', express.static('public'));
 
 app.get('/*', (req, res) => {
   match({ routes, location : req.url }, (error, redirectLocation, renderProps) => {
@@ -19,7 +23,9 @@ app.get('/*', (req, res) => {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search);
       return;
     }
-    res.status(200).send(renderToString(<RouterContext {...renderProps} />));
+
+    const initialComponent = renderToString(<RouterContext {...renderProps} />);
+    res.render('index', { initialComponent });
   });
 });
 

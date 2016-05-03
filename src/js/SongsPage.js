@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 const SONGS = [
   {
@@ -53,6 +54,7 @@ class SongsPage extends React.Component {
   render () {
     return (
       <div className="SongsPage">
+        <Helmet title="Songs"/>
         <h2>songs</h2>
         <ul>
           {SONGS.map(s => <Song song={s} key={s.title}/>)}

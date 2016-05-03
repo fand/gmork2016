@@ -1,3 +1,11 @@
 * {
-    color : blue;
+    color : #345;
 }
+
+.App {
+    &__Content {
+        margin-left: 300px;
+    }
+}
+
+@import 'sidebar';

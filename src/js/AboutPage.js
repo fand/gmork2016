@@ -1,10 +1,12 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 class AboutPage extends React.Component {
 
   render () {
     return (
       <div className="AboutPage">
+        <Helmet title="あがうと？"/>
         <h2>About</h2>
         <dl>
           <dt>NAME</dt><dd>Takayosi Amagi / Jun Fan</dd>
