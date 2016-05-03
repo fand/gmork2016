@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const SECTIONS = [{
   name: 'Songs',
@@ -46,8 +47,14 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="App">
-        {SECTIONS.map(s => <Section section={s} key={s.name}/>)}
+      <div>
+        <aside className="App__Sidebar">
+          <Link to="/about">About</Link>
+          <Link to="/songs">Songs</Link>
+        </aside>
+        <div className="App__Content">
+          {this.props.children}
+        </div>
       </div>
     );
   }

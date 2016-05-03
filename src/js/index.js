@@ -1,5 +1,19 @@
 import React    from 'react';
 import ReactDOM from 'react-dom';
-import App      from './App';
+import { Router, Route, browserHistory } from 'react-router';
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+import App         from './App';
+import AboutPage   from './AboutPage';
+import SongsPage   from './SongsPage';
+import NoMatchPage from './NoMatchPage';
+
+ReactDOM.render(
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <Route path="about" component={AboutPage}/>
+      <Route path="songs" component={SongsPage}/>
+      <Route path="*" component={NoMatchPage}/>
+    </Route>
+  </Router>,
+  document.getElementById('app')
+);
