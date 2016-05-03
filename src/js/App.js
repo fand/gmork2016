@@ -4,10 +4,6 @@ import { Link } from 'react-router';
 const SECTIONS = [{
   name: 'Songs',
   items: [
-    { name: '監獄の外', href: 'http://www.nicovideo.jp/watch/sm17074703' },
-    { name: '君は走ったことがあるかい', href: 'http://www.nicovideo.jp/watch/sm15446051' },
-    { name: 'ゲルニカ', href: 'http://www.nicovideo.jp/watch/sm14528963' },
-    { name: '水仙の風', href: 'http://www.nicovideo.jp/watch/sm14292989' },
   ],
 }, {
   name: 'Codes',

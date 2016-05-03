@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "http-server public",
+    "serve": "babel-node server/index.js",
     "clean": "rm -rf public/js public/css && mkdir public/js public/css",
     "build": "npm-run-all clean -p build:js build:css",
     "build:js": "browserify -t babelify src/js/index.js -o public/js/index.js",
@@ -17,6 +17,9 @@
   "author": "amagitakayosi",
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.8.0",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-router": "^2.4.0"
