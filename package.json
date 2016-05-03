@@ -1,0 +1,36 @@
+{
+  "name": "gmork.in",
+  "version": "0.0.1",
+  "description": "gmork.in website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server public",
+    "clean": "rm -rf public/js public/css && mkdir public/js public/css",
+    "build": "npm-run-all clean -p build:js build:css",
+    "build:js": "browserify -t babelify src/js/index.js -o public/js/index.js",
+    "build:css": "node-sass -r src/css/index.scss public/css/index.css",
+    "watch": "npm-run-all clean build -p watch:js watch:css serve",
+    "watch:js": "watchify -t babelify src/js/index.js -o public/js/index.js -v -d",
+    "watch:css": "node-sass -w -r src/css/index.scss public/css/index.css"
+  },
+  "author": "amagitakayosi",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "babelify": "^7.3.0",
+    "eslint": "^2.9.0",
+    "eslint-plugin-react": "^5.0.1",
+    "node-sass": "^3.7.0",
+    "npm-run-all": "^1.8.0",
+    "watchify": "^3.7.0"
+  }
+}
