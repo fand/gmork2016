@@ -1,5 +1,5 @@
 .DS_STORE
 npm-debug.log
 node_modules/
-coverage/
-lib/
+static/js/
+static/css/

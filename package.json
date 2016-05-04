@@ -6,13 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "babel-node server/index.js",
-    "clean": "rm -rf public/js public/css && mkdir public/js public/css",
+    "clean": "rm -rf static/js static/css && mkdir static/js static/css",
     "build": "npm-run-all clean -p build:js build:css",
-    "build:js": "browserify -t babelify src/js/index.js -o public/js/index.js",
-    "build:css": "node-sass -r src/css/index.scss public/css/index.css",
+    "build:js": "browserify -t babelify src/js/index.js -o static/js/index.js",
+    "build:css": "node-sass -r src/css/index.scss static/css/index.css",
     "watch": "npm-run-all clean build -p watch:js watch:css serve",
-    "watch:js": "watchify -t babelify src/js/index.js -o public/js/index.js -v -d",
-    "watch:css": "node-sass -w -r src/css/index.scss public/css/index.css"
+    "watch:js": "watchify -t babelify src/js/index.js -o static/js/index.js -v -d",
+    "watch:css": "node-sass -w -r src/css/index.scss static/css/index.css"
   },
   "author": "amagitakayosi",
   "license": "MIT",

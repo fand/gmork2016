@@ -11,7 +11,7 @@ app.use(morgan('combined'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
-app.use('/public', express.static('public'));
+app.use('/static', express.static('static'));
 
 app.get('/*', (req, res) => {
   match({ routes, location : req.url }, (error, redirectLocation, renderProps) => {
