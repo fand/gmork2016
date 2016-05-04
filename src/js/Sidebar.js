@@ -7,8 +7,10 @@ class Sidebar extends React.Component {
     return (
       <aside className="Sidebar">
         <img src="/img/vertigo.png"/>
-        <Link to="/about">About</Link>
-        <Link to="/songs">Songs</Link>
+        <ul>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/songs">Songs</Link></li>
+        </ul>
       </aside>
     );
   }

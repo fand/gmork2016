@@ -6,7 +6,7 @@ class AboutPage extends React.Component {
   render () {
     return (
       <div className="AboutPage">
-        <Helmet title="あがうと？"/>
+        <Helmet title="あがうと？" meta={[{  property : 'og:type', content : 'article' }]}/>
         <h2>About</h2>
         <dl>
           <dt>NAME</dt><dd>Takayosi Amagi / Jun Fan</dd>

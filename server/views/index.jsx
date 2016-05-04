@@ -17,9 +17,9 @@ class Index extends React.Component {
           <title>{this.props.title}</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
           <meta itemProp="name" content="グモルク"/>
-          <meta itemProp="image" content="http://cdn.mogile.archive.st-hatena.com/v1/image/amagitakayosi/302452276901284719.png"/>
+          <meta itemProp="image" content="http://gmork.in/static/image/og_image.png"/>
           <meta property="og:title" content="グモルク"/>
-          <meta property="og:type" content="blog"/>
+          <meta property="og:type" content="website"/>
           <meta property="og:url" content="http://gmork.in/"/>
           <meta property="og:image" content="http://gmork.in/static/image/og_image.png"/>
           <meta property="og:description" content="グモルク"/>
