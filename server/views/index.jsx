@@ -25,11 +25,11 @@ class Index extends React.Component {
           <meta property="og:description" content="グモルク"/>
           <meta property="og:site_name" content="http://gmork.in/"/>
           <link rel="canonical" href="http://gmork.in/"/>
-          <link rel="stylesheet" href="/public/css/index.css" />
+          <link rel="stylesheet" href="/static/css/index.css" />
         </head>
         <body>
           <div id="app">{this.props.children}</div>
-          <script src="/public/js/index.js"></script>
+          <script src="/static/js/index.js"></script>
         </body>
       </html>
     );

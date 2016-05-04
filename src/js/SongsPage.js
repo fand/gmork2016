@@ -55,7 +55,7 @@ class SongsPage extends React.Component {
     return (
       <div className="SongsPage">
         <Helmet title="Songs" meta={[{ property : 'og:type', content : 'article' }]}/>
-        <h2>songs</h2>
+        <h2>Songs</h2>
         <ul>
           {SONGS.map(s => <Song song={s} key={s.title}/>)}
         </ul>

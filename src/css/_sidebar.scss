@@ -1,8 +1,32 @@
+@import 'color';
+
 .Sidebar {
     position   : fixed;
     left       : 0;
     top        : 0;
     height     : 100%;
     width      : 300px;
-    background : #fafafa;
+    background : $bg;
+
+    ul {
+        list-style: none;
+        width: 100%;
+        padding: 0;
+    }
+    li {
+        width: 100%;
+        a {
+            display         : block;
+            text-decoration : none;
+            line-height     : 2em;
+            width: 160px;
+            margin: 10px auto;
+            padding: 0 10px;
+        }
+        .is-active {
+            background : $text;
+            color      : $bg;
+            opacity: 0.7;
+        }
+    }
 }
