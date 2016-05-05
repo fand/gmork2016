@@ -1,9 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-
-import Markdowner from './Markdowner';
-// const SONGS = Markdowner('Songs');
-const SONGS = Markdowner('Libs');
+import { connect } from 'react-redux';
 
 class SongsPage extends React.Component {
 
@@ -11,11 +8,11 @@ class SongsPage extends React.Component {
     return (
       <div className="SongsPage">
         <Helmet title="Songs" meta={[{ property : 'og:type', content : 'article' }]}/>
-        <div dangerouslySetInnerHTML={{ __html : SONGS }}/>
+        <div dangerouslySetInnerHTML={{ __html : this.props.markdown.Songs }}/>
       </div>
     );
   }
 
 }
 
-export default SongsPage;
+export default connect((state) => (state))(SongsPage);

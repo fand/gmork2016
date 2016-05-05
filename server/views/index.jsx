@@ -4,8 +4,9 @@ class Index extends React.Component {
 
   static get propTypes () {
     return {
-      title    : React.PropTypes.string,
-      children : React.PropTypes.node,
+      title            : React.PropTypes.string,
+      initialComponent : React.PropTypes.node,
+      initialState     : React.PropTypes.object,
     };
   }
 
@@ -28,7 +29,10 @@ class Index extends React.Component {
           <link rel="stylesheet" href="/static/css/index.css" />
         </head>
         <body>
-          <div id="app">{this.props.children}</div>
+          <div id="app" dangerouslySetInnerHTML={{ __html : this.props.initialComponent }}/>
+          <script dangerouslySetInnerHTML={{ __html : `
+              window.__INITIAL_STATE__ = ${this.props.initialState};
+          `}}></script>
           <script src="/static/js/index.js"></script>
         </body>
       </html>

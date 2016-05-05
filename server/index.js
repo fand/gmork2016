@@ -6,6 +6,10 @@ import { renderToString }       from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
 import routes                   from '../src/js/routes';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducers from '../src/js/reducers';
+
 const app = express();
 app.use(morgan('combined'));
 app.set('views', __dirname + '/views');
@@ -24,8 +28,18 @@ app.get('/*', (req, res) => {
       return;
     }
 
-    const initialComponent = renderToString(<RouterContext {...renderProps} />);
-    res.render('index', { initialComponent });
+    const store = createStore(reducers);
+    const initialState = JSON.stringify(store.getState());
+
+    const initialComponent = renderToString(
+      <Provider store={store}>
+        <div>
+          <RouterContext {...renderProps} />;
+        </div>
+      </Provider>
+    );
+
+    res.render('index', { initialComponent, initialState });
   });
 });
 
