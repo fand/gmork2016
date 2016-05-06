@@ -8,6 +8,19 @@
     width      : 300px;
     background : $bg;
 
+    img {
+        width: 120px;
+        height: 120px;
+        margin: 40px 90px 20px;
+    }
+    &__Header {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin: 0px auto 30px;
+    }
+
     ul {
         list-style: none;
         width: 100%;
@@ -21,12 +34,11 @@
             line-height     : 2em;
             width: 160px;
             margin: 10px auto;
-            padding: 0 10px;
+            text-align: center;
         }
         .is-active {
-            background : $text;
-            color      : $bg;
-            opacity: 0.7;
+            background: $text;
+            color: $bg;
         }
     }
 }

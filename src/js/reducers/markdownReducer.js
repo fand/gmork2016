@@ -16,7 +16,9 @@ const initState = () => {
     files.forEach((f) => {
       if (!f.match(/.*\.md$/)) { return; }
       const name = f.replace('.md', '');
-      state[name] = processor.process(fs.readFileSync(path.resolve(DIR, f), 'utf8'));
+      state[name] = processor.process(fs.readFileSync(path.resolve(DIR, f), 'utf8'), {
+        breaks: true,
+      });
     });
 
     return state;

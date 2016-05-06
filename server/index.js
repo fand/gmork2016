@@ -14,7 +14,7 @@ import reducers                 from '../src/js/reducers';
 const app = express();
 app.use(morgan('combined'));
 app.engine('ejs', renderFile);
-app.set('views', path.resolve(__dirname, '/views'));
+app.set('views', path.resolve(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use('/static', express.static('static'));
 

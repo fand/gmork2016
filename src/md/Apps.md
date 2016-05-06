@@ -1,4 +1,6 @@
-# Apps
+# Works
+
+これまでに制作したwebアプリなど。
 
 ## evil
 [![]()](http://evil.gmork.in/)
@@ -16,6 +18,7 @@ http://gmork.in/mokugyo/
 
 ## lolipop
 [![lolipop thumbnail](http://cdn-ak.f.st-hatena.com/images/fotolife/a/amagitakayosi/20141123/20141123172027.png)](https://github.com/fand/lolipop)
+
 https://github.com/fand/lolipop
 
 - GitHub: https://github.com/fand/lolipop
@@ -31,12 +34,16 @@ http://gmork.in/guitarbreaks/
 - Blog: http://amagitakayosi.hatenablog.com/entry/2015/12/29/215009
 
 ## Cyro
+![]()
 http://gmork.in/cyro/
+
 - GitHub: https://github.com/fand/cyro
 - Blog: http://amagitakayosi.hatenablog.com/entry/2015/10/13/080000
 
 ## RVD
+![]()
 http://gmork.in/rvd/
+
 - GitHub: https://github.com/fand/RVD
 - Blog:
 
@@ -44,8 +51,12 @@ http://gmork.in/rvd/
 ![]()
 http://gmork.in/bake/
 
+canvasで画像を生成。
+初めてインターネットに公開した制作物。
+
 ## Random Font Generator
 ![]()
 http://font.gmork.in/
 
-woff形式のwebフォントはサポートされなくなったため、現在は利用不可。
+woff形式のwebフォントを変形させる。
+主要ブラウザでwoff形式のwebフォントがサポートされなくなったため、現在は利用不可。

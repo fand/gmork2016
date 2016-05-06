@@ -2,9 +2,16 @@
     color : #456789;
 }
 
+h2 {
+  margin-top: 60px;
+}
+ul {
+  padding-left: 20px;
+}
+
 .App {
     &__Content {
-        margin-left: 300px;
+        margin-left: 320px;
     }
 }
 
