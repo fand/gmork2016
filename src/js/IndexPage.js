@@ -6,7 +6,7 @@ class IndexPage extends React.Component {
   render () {
     return (
       <div className="IndexPage">
-        <Helmet title="グモルク"/>
+        <Helmet title="Gmork.in"/>
         <img src="/static/image/logo.png"/>
       </div>
     );
