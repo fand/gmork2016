@@ -10,7 +10,7 @@ http://evil.gmork.in/
 - GitHub: https://github.com/fand/lolipop
 
 ## 木魚クリッカー
-![](http://gmork.in/mokugyo/)
+<a href="http://gmork.in/mokugyo/"><img class="thumbnail" src="/static/image/t_mokugyo.png"/></a>
 http://gmork.in/mokugyo/
 
 - GitHub: https://github.com/fand/mokugyoclicker

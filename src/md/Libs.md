@@ -13,7 +13,7 @@
 - GitHub: http://github.com/fand/node-aviglitch
 - npm: http://npm.im/aviglitch
 
-ucnv氏の[aviglitch]()をJavaScriptに移植したもの。
+ucnv氏の[aviglitch](https://github.com/ucnv/aviglitch)をJavaScriptに移植したもの。
 AVIファイルをdatamoshする。
 
 ## p2o
@@ -60,4 +60,4 @@ Expressと組み合わせると、Youtubeのプロキシサーバーを簡単に
 - npm: http://npm.im/pagelang
 
 CLIツール。
-自分のプロジェクトが依存しているパッケージを、依存度合いでランク付けして表示します。
+自分のプロジェクトが依存しているパッケージを、依存度合いでランク付けして表示する。
