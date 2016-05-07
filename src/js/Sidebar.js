@@ -8,8 +8,10 @@ class Sidebar extends React.Component {
   render () {
     return (
       <aside className="Sidebar">
-        <img src="/static/image/vertigo.png"/>
-        <div className="Sidebar__Header">Gmork.in</div>
+        <Link to="/">
+          <img src="/static/image/vertigo.png"/>
+          <div className="Sidebar__Header">Gmork.in</div>
+        </Link>
         <ul role="nav">
           <li><NavLink  to="/about">About</NavLink></li>
           <li><NavLink to="/apps">Works</NavLink></li>

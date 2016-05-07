@@ -6,7 +6,10 @@
     top        : 0;
     height     : 100%;
     width      : 300px;
-    background : $bg;
+
+    a {
+        text-decoration : none;
+    }
 
     img {
         width: 120px;
@@ -29,12 +32,11 @@
     li {
         width: 100%;
         a {
-            display         : block;
-            text-decoration : none;
-            line-height     : 2em;
-            width: 160px;
-            margin: 10px auto;
-            text-align: center;
+            display     : block;
+            line-height : 2em;
+            width       : 160px;
+            margin      : 10px auto;
+            text-align  : center;
         }
         .is-active {
             background: $text;
