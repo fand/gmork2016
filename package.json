@@ -4,6 +4,7 @@
   "description": "gmork.in website",
   "main": "index.js",
   "scripts": {
+    "start": "npm-run-all -p watch serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "babel-node server/index.js",
     "clean": "rm -rf static/js static/css && mkdir static/js static/css",
