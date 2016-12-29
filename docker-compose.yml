@@ -1,0 +1,7 @@
+# mysql
+web:
+  image: gmork
+  ports:
+    - "3000:3000"
+  environment:
+    GMORK_PORT: 3000
