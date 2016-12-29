@@ -11,7 +11,7 @@
     "build": "npm-run-all clean -p build:js build:css",
     "build:js": "browserify src/js/index.js -o static/js/index.js",
     "build:css": "node-sass -r src/css/index.scss static/css/index.css",
-    "watch": "npm-run-all clean build -p watch:js watch:css serve",
+    "watch": "npm-run-all clean build -p watch:js watch:css",
     "watch:js": "watchify src/js/index.js -o static/js/index.js -v -d",
     "watch:css": "node-sass -w -r src/css/index.scss static/css/index.css"
   },
