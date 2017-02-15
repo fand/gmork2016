@@ -8,4 +8,6 @@ ADD . /app
 RUN npm i -g yarn
 RUN yarn
 
-CMD [ "npm", "start" ]
+RUN yarn global add pm2
+
+CMD ["pm2-docker", "server/index.js"]
