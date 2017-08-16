@@ -10,4 +10,4 @@ RUN yarn
 
 RUN yarn global add pm2
 
-CMD ["pm2-docker", "server/index.js"]
+CMD ["pm2-docker", "node_modules/.bin/babel-node" "server/index.js"]
